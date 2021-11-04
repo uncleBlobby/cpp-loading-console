@@ -44,7 +44,7 @@ void equalsLoader(int seconds)
     std::cout << "]" /* << std::endl << std::flush */ ;
     std::this_thread::sleep_for(std::chrono::milliseconds(100));
     std::cout << "Task Completed!" << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    std::this_thread::sleep_for(std::chrono::milliseconds(500)); // announce final conmpletion of all loops
     return;
 }
 
@@ -61,6 +61,11 @@ void percentLoader(int seconds)
         std::cout << "\r" << 10 * 10 << "% " << std::flush;
     }
     std::cout << "Task Completed!" << std::endl;
-    std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    std::this_thread::sleep_for(std::chrono::milliseconds(500)); // announce final conmpletion of all loops
     return;
+}
+
+void dashesLoader(int seconds)
+{
+
 }
